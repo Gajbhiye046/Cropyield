@@ -1,0 +1,45 @@
+[versions]
+agp = "8.3.0"
+joblib = "0.14.1"
+kotlin = "1.9.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.2"
+activityCompose = "1.9.0"
+composeBom = "2023.08.00"
+nd4jApi = "1.0.0-beta7"
+nd4jCommon = "1.0.0-beta7"
+nd4jNative = "1.0.0-beta7"
+tf="2.6.0"
+tfLite = "2.7.0"
+tfLiteSelectTfOps = "2.5.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+joblib = { module = "org.joblib:joblib", version.ref = "joblib" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+nd4j-api = { module = "org.nd4j:nd4j-api", version.ref = "nd4jApi" }
+nd4j-common = { module = "org.nd4j:nd4j-common", version.ref = "nd4jCommon" }
+nd4j-native = { module = "org.nd4j:nd4j-native", version.ref = "nd4jNative" }
+tensorflow = { group = "org.tensorflow", name = "tensorflow-lite", version.ref  = "tf"}
+tensorflow-tensorflowLite ={group = "org.tensorflow", name = "tensorflow-lite", version.ref = "tfLite"}
+tensorflow-lite-select-tf-ops ={group = "org.tensorflow", name = "tensorflow-lite-select-tf-ops", version.ref = "tfLiteSelectTfOps"}
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
